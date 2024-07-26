@@ -66,10 +66,16 @@
             "collection": "womens-handbags"
           }
         },
+        "featured_collection_xV7J47": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "womens-small-leather-goods"
+          }
+        },
         "featured_collection_py9PJf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "automated-collection"
+            "collection": "womens-fashion-jewelry"
           }
         },
         "featured_collection_E4hVJh": {
@@ -101,23 +107,17 @@
           "settings": {
             "collection": "automated-collection"
           }
-        },
-        "featured_collection_6CkqbN": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "automated-collection"
-          }
         }
       },
       "block_order": [
         "featured_collection_MFhNBG",
+        "featured_collection_xV7J47",
         "featured_collection_py9PJf",
         "featured_collection_E4hVJh",
         "featured_collection_3G3BjG",
         "featured_collection_Q3JwjL",
         "featured_collection_ATVLzg",
-        "featured_collection_qTTHrP",
-        "featured_collection_6CkqbN"
+        "featured_collection_qTTHrP"
       ],
       "settings": {
         "title": "Explore a Selection of the Maison's Creations",
