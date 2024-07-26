@@ -124,7 +124,7 @@
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
