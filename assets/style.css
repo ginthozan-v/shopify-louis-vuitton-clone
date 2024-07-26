@@ -554,7 +554,33 @@ video {
   --tw-contain-style:  ;
 }
 
-.tw-bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+.tw-ml-32 {
+  margin-left: 8rem;
+}
+
+.tw-flex {
+  display: flex;
+}
+
+.tw-items-center {
+  align-items: center;
+}
+
+.tw-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.tw-text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.tw-text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.\!tw-no-underline {
+  text-decoration-line: none !important;
 }
