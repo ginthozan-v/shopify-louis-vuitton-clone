@@ -142,7 +142,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button {% if  block.settings.button_style == 'link' %} tw-border-none {% endif %} {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class=" {% if  block.settings.button_style == 'link' %} tw-border-b-2 tw-font-semibold {% else %} button {% endif %} {% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>

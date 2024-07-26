@@ -566,6 +566,10 @@ video {
   align-items: center;
 }
 
+.tw-border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .tw-border-none {
   border-style: none;
 }
@@ -591,6 +595,14 @@ video {
 .tw-text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.tw-font-bold {
+  font-weight: 700;
+}
+
+.tw-font-semibold {
+  font-weight: 600;
 }
 
 .\!tw-no-underline {
