@@ -554,8 +554,30 @@ video {
   --tw-contain-style:  ;
 }
 
+.tw-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.\!tw-mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .tw-ml-32 {
   margin-left: 8rem;
+}
+
+.tw-mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.\!tw-mb-10 {
+  margin-bottom: 2.5rem !important;
+}
+
+.\!tw-mb-20 {
+  margin-bottom: 5rem !important;
 }
 
 .tw-flex {
@@ -564,6 +586,22 @@ video {
 
 .tw-items-center {
   align-items: center;
+}
+
+.tw-gap-10 {
+  gap: 2.5rem;
+}
+
+.tw-gap-5 {
+  gap: 1.25rem;
+}
+
+.tw-gap-4 {
+  gap: 1rem;
+}
+
+.tw-gap-3 {
+  gap: 0.75rem;
 }
 
 .tw-border-b-2 {
@@ -582,6 +620,14 @@ video {
   padding: 0px !important;
 }
 
+.tw-text-center {
+  text-align: center;
+}
+
+.\!tw-text-center {
+  text-align: center !important;
+}
+
 .tw-text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -595,6 +641,19 @@ video {
 .tw-text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.\!tw-text-base {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
+.\!tw-text-\[14px\] {
+  font-size: 14px !important;
+}
+
+.\!tw-text-\[12px\] {
+  font-size: 12px !important;
 }
 
 .tw-font-bold {

@@ -122,16 +122,13 @@
               {% else %}
                 href="{{ card_collection.url }}"
               {% endif %}
-              class="full-unstyled-link"
+              class="full-unstyled-link tw-text-center !tw-text-[12px]"
             >
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
               {%- else -%}
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
-              {%- if card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
-              {%- endif %}
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
