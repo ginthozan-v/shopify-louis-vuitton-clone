@@ -15,7 +15,7 @@
         "text_3Xprm3": {
           "type": "text",
           "settings": {
-            "text": "WOMENT",
+            "text": "<strong>WOMENT<\/strong>",
             "text_style": "caption-with-letter-spacing"
           }
         },
