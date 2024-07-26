@@ -566,6 +566,18 @@ video {
   align-items: center;
 }
 
+.tw-border-none {
+  border-style: none;
+}
+
+.tw-p-0 {
+  padding: 0px;
+}
+
+.\!tw-p-0 {
+  padding: 0px !important;
+}
+
 .tw-text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
