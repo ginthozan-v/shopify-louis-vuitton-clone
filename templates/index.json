@@ -63,26 +63,61 @@
         "featured_collection_MFhNBG": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "automated-collection"
           }
         },
-        "featured_collection_AhMAhk": {
+        "featured_collection_py9PJf": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "automated-collection"
           }
         },
-        "featured_collection_8FKLRr": {
+        "featured_collection_E4hVJh": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "automated-collection"
+          }
+        },
+        "featured_collection_3G3BjG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automated-collection"
+          }
+        },
+        "featured_collection_Q3JwjL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automated-collection"
+          }
+        },
+        "featured_collection_ATVLzg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automated-collection"
+          }
+        },
+        "featured_collection_qTTHrP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automated-collection"
+          }
+        },
+        "featured_collection_6CkqbN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "automated-collection"
           }
         }
       },
       "block_order": [
         "featured_collection_MFhNBG",
-        "featured_collection_AhMAhk",
-        "featured_collection_8FKLRr"
+        "featured_collection_py9PJf",
+        "featured_collection_E4hVJh",
+        "featured_collection_3G3BjG",
+        "featured_collection_Q3JwjL",
+        "featured_collection_ATVLzg",
+        "featured_collection_qTTHrP",
+        "featured_collection_6CkqbN"
       ],
       "settings": {
         "title": "Explore a Selection of the Maison's Creations",
