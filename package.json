@@ -1,0 +1,29 @@
+{
+  "name": "shopify-louis-vuitton-clone",
+  "version": "1.0.0",
+  "description": "Shopify Lois Vuitton Clone Project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently  -c \"auto\" \"npm:dev:*\"",
+    "dev:tailwind": "npx tailwindcss -i ./style.css -o ./assets/style.css --watch",
+    "dev:shopify": "shopify theme dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginthozan-v/shopify-louis-vuitton-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ginthozan-v/shopify-louis-vuitton-clone/issues"
+  },
+  "homepage": "https://github.com/ginthozan-v/shopify-louis-vuitton-clone#readme",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "concurrently": "^8.2.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.7"
+  }
+}
