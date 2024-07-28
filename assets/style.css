@@ -603,6 +603,10 @@ video {
   height: 90vh;
 }
 
+.tw-h-full {
+  height: 100%;
+}
+
 .tw-w-full {
   width: 100%;
 }
@@ -660,6 +664,11 @@ video {
 
 .tw-to-gray-200 {
   --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
+}
+
+.tw-object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .\!tw-p-0 {

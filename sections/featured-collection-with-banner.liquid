@@ -123,7 +123,7 @@
     {% comment %} BANNER {% endcomment %}
     {% if section.settings.banner_image != blank %}
       <div class="banner-wrapper--{{ section.id }} tw-relative tw-h-[90vh] tw-w-full tw-overflow-hidden">
-        {% assign class_name = 'tw-w-screen banner-img--' | append: section.id %}
+        {% assign class_name = 'tw-w-screen tw-h-full tw-object-cover banner-img--' | append: section.id %}
 
         {{
           section.settings.banner_image |
