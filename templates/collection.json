@@ -34,6 +34,9 @@
         "filter_type": "drawer",
         "enable_sorting": false,
         "columns_mobile": "2",
+        "custom_image": "shopify:\/\/shop_images\/Screenshot_2024-07-28_at_23.51.03.png",
+        "custom_image_position": 1,
+        "custom_image_column": "double",
         "padding_top": 0,
         "padding_bottom": 36
       }
