@@ -740,6 +740,26 @@ video {
   font-weight: 500;
 }
 
+.tw-leading-none {
+  line-height: 1;
+}
+
+.\!tw-leading-none {
+  line-height: 1 !important;
+}
+
+.\!tw-leading-tight {
+  line-height: 1.25 !important;
+}
+
+.\!tw-leading-10 {
+  line-height: 2.5rem !important;
+}
+
+.\!tw-leading-\[0px\] {
+  line-height: 0px !important;
+}
+
 .\!tw-no-underline {
   text-decoration-line: none !important;
 }
