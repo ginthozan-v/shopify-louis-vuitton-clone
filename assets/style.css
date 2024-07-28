@@ -566,6 +566,18 @@ video {
   bottom: 0px;
 }
 
+.tw-col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.\!tw-col-span-2 {
+  grid-column: span 2 / span 2 !important;
+}
+
+.tw-row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
 .\!tw-mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -583,12 +595,12 @@ video {
   margin-left: 8rem;
 }
 
-.tw-h-\[90vh\] {
-  height: 90vh;
+.tw-grid {
+  display: grid;
 }
 
-.tw-h-full {
-  height: 100%;
+.tw-h-\[90vh\] {
+  height: 90vh;
 }
 
 .tw-w-full {
@@ -599,8 +611,20 @@ video {
   width: 100vw;
 }
 
+.\!tw-w-full {
+  width: 100% !important;
+}
+
+.tw-min-w-\[100\%\] {
+  min-width: 100%;
+}
+
 .tw-flex-1 {
   flex: 1 1 0%;
+}
+
+.tw-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .tw-gap-0 {
@@ -624,23 +648,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.tw-bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.tw-bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
 .tw-bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.tw-from-slate-50 {
-  --tw-gradient-from: #f8fafc var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(248 250 252 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .tw-from-white {
@@ -649,65 +658,22 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.tw-to-slate-200 {
-  --tw-gradient-to: #e2e8f0 var(--tw-gradient-to-position);
-}
-
-.tw-to-slate-100 {
-  --tw-gradient-to: #f1f5f9 var(--tw-gradient-to-position);
-}
-
-.tw-to-slate-50 {
-  --tw-gradient-to: #f8fafc var(--tw-gradient-to-position);
-}
-
-.tw-to-gray-100 {
-  --tw-gradient-to: #f3f4f6 var(--tw-gradient-to-position);
-}
-
 .tw-to-gray-200 {
   --tw-gradient-to: #e5e7eb var(--tw-gradient-to-position);
-}
-
-.tw-object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .\!tw-p-0 {
   padding: 0px !important;
 }
 
-.tw-p-2 {
-  padding: 0.5rem;
-}
-
-.\!tw-p-2 {
-  padding: 0.5rem !important;
-}
-
-.\!tw-p-5 {
-  padding: 1.25rem !important;
-}
-
-.tw-py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.\!tw-py-10 {
-  padding-top: 2.5rem !important;
-  padding-bottom: 2.5rem !important;
+.\!tw-px-5 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
 }
 
 .\!tw-py-5 {
   padding-top: 1.25rem !important;
   padding-bottom: 1.25rem !important;
-}
-
-.\!tw-px-5 {
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
 }
 
 .tw-pt-20 {
@@ -727,33 +693,12 @@ video {
   line-height: 1.5rem;
 }
 
-.tw-text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.tw-font-semibold {
-  font-weight: 600;
-}
-
 .tw-font-medium {
   font-weight: 500;
 }
 
-.tw-leading-none {
-  line-height: 1;
-}
-
-.\!tw-leading-none {
-  line-height: 1 !important;
-}
-
-.\!tw-leading-tight {
-  line-height: 1.25 !important;
-}
-
-.\!tw-leading-10 {
-  line-height: 2.5rem !important;
+.tw-font-semibold {
+  font-weight: 600;
 }
 
 .\!tw-leading-\[0px\] {
@@ -764,76 +709,12 @@ video {
   text-decoration-line: none !important;
 }
 
-.tw-bg-blend-multiply {
-  background-blend-mode: multiply;
-}
-
-.tw-bg-blend-screen {
-  background-blend-mode: screen;
-}
-
-.tw-bg-blend-overlay {
-  background-blend-mode: overlay;
-}
-
-.tw-bg-blend-darken {
-  background-blend-mode: darken;
-}
-
-.\!tw-bg-blend-darken {
-  background-blend-mode: darken !important;
-}
-
-.tw-bg-blend-lighten {
-  background-blend-mode: lighten;
-}
-
-.tw-bg-blend-color-dodge {
-  background-blend-mode: color-dodge;
-}
-
-.tw-bg-blend-color-burn {
-  background-blend-mode: color-burn;
-}
-
-.tw-bg-blend-hard-light {
-  background-blend-mode: hard-light;
-}
-
-.tw-bg-blend-luminosity {
-  background-blend-mode: luminosity;
-}
-
 .tw-mix-blend-multiply {
   mix-blend-mode: multiply;
 }
 
-.tw-mix-blend-screen {
-  mix-blend-mode: screen;
-}
-
-.tw-mix-blend-darken {
-  mix-blend-mode: darken;
-}
-
-.tw-mix-blend-difference {
-  mix-blend-mode: difference;
-}
-
-.tw-mix-blend-plus-darker {
-  mix-blend-mode: plus-darker;
-}
-
-.tw-mix-blend-plus-lighter {
-  mix-blend-mode: plus-lighter;
-}
-
-.hover\:tw-no-underline:hover {
-  text-decoration-line: none;
-}
-
 @media (min-width: 1024px) {
-  .lg\:tw-h-auto {
-    height: auto;
+  .lg\:tw-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
