@@ -42,7 +42,7 @@
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
-      class="
+      class="tw-relative
         card card--{{ settings.card_style }}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
@@ -58,8 +58,8 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if card_product.featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent media--hover-effect">
+          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %} tw-bg-gradient-to-t tw-from-white tw-to-gray-200 ">
+            <div class="media media--transparent media--hover-effect ">
               {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
               <img
                 srcset="
@@ -74,7 +74,7 @@
                 src="{{ card_product.featured_media | image_url: width: 533 }}"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                 alt="{{ card_product.featured_media.alt | escape }}"
-                class="motion-reduce"
+                class="motion-reduce  tw-mix-blend-multiply"
                 {% unless lazy_load == false %}
                   loading="lazy"
                 {% endunless %}
@@ -143,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
+      <div class="card__content tw-absolute tw-bottom-0 !tw-px-5">
         <div class="card__information">
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"

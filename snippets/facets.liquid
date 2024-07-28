@@ -28,7 +28,7 @@
   endif
 -%}
 
-<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+<div class="facets-container !tw-py-5 {% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
       <form
@@ -427,32 +427,37 @@
               </div>
             </div>
           {%- endif -%}
-          <div class="product-count light" role="status">
-            <h2 class="product-count__text text-body">
-              <span id="ProductCountDesktop">
-                {%- if results.results_count -%}
-                  {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-                {%- elsif results.products_count == results.all_products_count -%}
-                  {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-                {%- else -%}
-                  {{
-                    'products.facets.product_count'
-                    | t: product_count: results.products_count, count: results.all_products_count
-                  }}
-                {%- endif -%}
-              </span>
-            </h2>
-            {%- render 'loading-spinner' -%}
-          </div>
+          {% comment %}
+            <div class="product-count light" role="status">
+              <h2 class="product-count__text text-body">
+                <span id="ProductCountDesktop">
+                  {%- if results.results_count -%}
+                    {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
+                  {%- elsif results.products_count == results.all_products_count -%}
+                    {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
+                  {%- else -%}
+                    {{
+                      'products.facets.product_count'
+                      | t: product_count: results.products_count, count: results.all_products_count
+                    }}
+                  {%- endif -%}
+                </span>
+              </h2>
+              {%- render 'loading-spinner' -%}
+            </div>
+          {% endcomment %}
         {%- endif -%}
       </form>
     </facet-filters-form>
   {%- endif -%}
   {% comment %}  Drawer and mobile filter {% endcomment %}
+
   <menu-drawer
     class="mobile-facets__wrapper{% if filter_type == 'horizontal' or filter_type == 'vertical' %} medium-hide large-up-hide{% endif %}"
     data-breakpoint="mobile"
   >
+    <p class="tw-flex-1 tw-text-md tw-font-medium">{{ collection_title }}</p>
+
     <details class="mobile-facets__disclosure disclosure-has-popup">
       <summary class="mobile-facets__open-wrapper focus-offset">
         <span class="mobile-facets__open{% if filter_type == 'drawer' and enable_filtering == false %} medium-hide large-up-hide{% endif %}">
@@ -880,26 +885,29 @@
       </form>
     </facet-filters-form>
   {%- endif -%}
-  <div
-    class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
-    role="status"
-  >
-    <h2 class="product-count__text text-body">
-      <span id="ProductCount">
-        {%- if results.results_count -%}
-          {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
-        {%- elsif results.products_count == results.all_products_count -%}
-          {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
-        {%- else -%}
-          {{
-            'products.facets.product_count'
-            | t: product_count: results.products_count, count: results.all_products_count
-          }}
-        {%- endif -%}
-      </span>
-    </h2>
-    {%- render 'loading-spinner' -%}
-  </div>
+
+  {% comment %}
+    <div
+      class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
+      role="status"
+    >
+      <h2 class="product-count__text text-body">
+        <span id="ProductCount">
+          {%- if results.results_count -%}
+            {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
+          {%- elsif results.products_count == results.all_products_count -%}
+            {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
+          {%- else -%}
+            {{
+              'products.facets.product_count'
+              | t: product_count: results.products_count, count: results.all_products_count
+            }}
+          {%- endif -%}
+        </span>
+      </h2>
+      {%- render 'loading-spinner' -%}
+    </div>
+  {% endcomment %}
   {%- if filter_type == 'drawer' -%}
     <facet-filters-form class="facets facets-pill small-hide">
       <form id="FacetFiltersPillsForm" class="facets__form">

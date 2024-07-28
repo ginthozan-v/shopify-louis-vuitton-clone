@@ -106,6 +106,7 @@
           data-id="{{ section.id }}"
         >
           {% render 'facets',
+            collection_title: collection.title,
             results: collection,
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,
@@ -138,13 +139,13 @@
           </div>
         {%- else -%}
           <div
-            class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+            class="collection{% if section.settings.filter_type != 'vertical' %} {% endif %}"
           >
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
               data-id="{{ section.id }}"
-              class="
+              class=" tw-gap-0
                 grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
                 grid--{{ section.settings.columns_desktop }}-col-desktop
                 {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
