@@ -566,8 +566,8 @@ video {
   bottom: 0px;
 }
 
-.\!tw-col-span-2 {
-  grid-column: span 2 / span 2 !important;
+.tw-col-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 .tw-row-span-2 {
@@ -712,4 +712,10 @@ video {
 
 .tw-mix-blend-multiply {
   mix-blend-mode: multiply;
+}
+
+@media (min-width: 1024px) {
+  .lg\:tw-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }

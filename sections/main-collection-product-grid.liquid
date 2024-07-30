@@ -153,11 +153,11 @@
                     {%- assign lazy_load = true -%}
                   {%- endif -%}
                   
-                      <li class="grid__item !tw-w-full tw-min-w-[100%] {% if section.settings.custom_image_column == 'double' %} !tw-col-span-2 tw-row-span-2 {% endif %}  scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 1;">
+                      <li class="grid__item !tw-w-full tw-min-w-[100%] {% if section.settings.custom_image_column == 'double' %} tw-col-span-2 tw-row-span-2 {% endif %}  scroll-trigger animate--slide-in" data-cascade="" style="--animation-order: 1;">
                          <div class="card-wrapper product-card-wrapper underline-links-hover">
                           <div class="card card--standard card--media tw-relative" style="--ratio-percent: 125.0%;">
                             <div class="card__inner color-scheme-2 gradient ratio" style="--ratio-percent: 125.0%;">
-                              <div class="card__media  tw-bg-gradient-to-t tw-from-white tw-to-gray-200 ">
+                              <div class="card__media tw-bg-gradient-to-t tw-from-white tw-to-gray-200 ">
                                   <div class="media media--transparent media--hover-effect ">
 
                                   <img
@@ -168,7 +168,7 @@
                                   src="{{ section.settings.custom_image | image_url: width: 2024 }}"
                                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                                   alt="{{ section.settings.custom_image.alt | escape }}"
-                                  class="motion-reduce  tw-mix-blend-multiply"
+                                  class="motion-reduce tw-mix-blend-multiply"
                                   {% unless lazy_load == false %}
                                     loading="lazy"
                                   {% endunless %}
@@ -225,10 +225,8 @@
               id="product-grid"
               data-id="{{ section.id }}"
               class="
-                 tw-grid tw-grid-cols-{{ section.settings.columns_mobile }} lg:tw-grid-cols-{{ section.settings.columns_desktop }}
-                product-grid tw-gap-0 grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                grid--{{ section.settings.columns_desktop }}-col-desktop
-                {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
+                tw-grid tw-grid-cols-{{ section.settings.columns_mobile }} lg:tw-grid-cols-{{ section.settings.columns_desktop }}
+                tw-gap-0 {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
               "
             >
               {{ product_list }}
