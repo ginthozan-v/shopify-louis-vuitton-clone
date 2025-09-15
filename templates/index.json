@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -15,7 +15,7 @@
         "text_3Xprm3": {
           "type": "text",
           "settings": {
-            "text": "<strong>WOMENT<\/strong>",
+            "text": "<strong>WOMENT</strong>",
             "text_style": "caption-with-letter-spacing"
           }
         },
@@ -30,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Discover the collection",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,7 +44,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/force-majeure-00tlC0Clfrs-unsplash.jpg",
+        "image": "shopify://shop_images/force-majeure-00tlC0Clfrs-unsplash.jpg",
         "image_overlay_opacity": 10,
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
@@ -135,7 +135,7 @@
     "featured_collection_with_banner_bRR9Na": {
       "type": "featured-collection-with-banner",
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/kristina-petrick-qmyebfKk3pw-unsplash.jpg",
+        "banner_image": "shopify://shop_images/kristina-petrick-qmyebfKk3pw-unsplash.jpg",
         "sub_title": "WOMEN",
         "title": "Online Exclusive",
         "heading_size": "h2",
@@ -166,7 +166,7 @@
     "featured_collection_with_banner_8N4MVV": {
       "type": "featured-collection-with-banner",
       "settings": {
-        "banner_image": "shopify:\/\/shop_images\/trafa-thomas-IcmwLRBRoVE-unsplash.jpg",
+        "banner_image": "shopify://shop_images/trafa-thomas-IcmwLRBRoVE-unsplash.jpg",
         "sub_title": "WOMEN",
         "title": "Fashion Jewelry",
         "heading_size": "h2",
@@ -193,12 +193,31 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "17579674076ef86af2": {
+      "type": "apps",
+      "blocks": {
+        "shopi_form_star_rating_Eyxaa6": {
+          "type": "shopify://apps/shopi-form/blocks/star_rating/30e58175-3edf-424e-a8b9-c2c311f372ed",
+          "settings": {
+            "product": "gift-card",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "shopi_form_star_rating_Eyxaa6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image_banner",
     "collection_list_CNbdj3",
     "featured_collection_with_banner_bRR9Na",
-    "featured_collection_with_banner_8N4MVV"
+    "featured_collection_with_banner_8N4MVV",
+    "17579674076ef86af2"
   ]
 }
