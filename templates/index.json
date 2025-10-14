@@ -57,6 +57,23 @@
         "show_text_below": false
       }
     },
+    "176046831435fb4989": {
+      "type": "apps",
+      "blocks": {
+        "shopi_form_form_section_XNxt4V": {
+          "type": "shopify://apps/shopi-form/blocks/form_section/0199df05-23d8-707a-aabd-8b3b7221f5d6",
+          "settings": {
+            "form_code": "68527"
+          }
+        }
+      },
+      "block_order": [
+        "shopi_form_form_section_XNxt4V"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "collection_list_CNbdj3": {
       "type": "collection-list",
       "blocks": {
@@ -197,6 +214,7 @@
   },
   "order": [
     "image_banner",
+    "176046831435fb4989",
     "collection_list_CNbdj3",
     "featured_collection_with_banner_bRR9Na",
     "featured_collection_with_banner_8N4MVV"
