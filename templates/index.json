@@ -9,18 +9,18 @@
  */
 {
   "sections": {
-    "1761420777abe1fa64": {
+    "1761421043e3d1ca0a": {
       "type": "apps",
       "blocks": {
-        "shopiform_form_section_eUMWe7": {
-          "type": "shopify://apps/shopiform/blocks/form_section/019a1cda-ff91-7b92-a05e-65a53158b3d8",
+        "shopiform_form_section_KCPMHx": {
+          "type": "shopify://apps/shopiform/blocks/form_section/019a1cdf-cc7b-7948-b8c2-4db01c83966a",
           "settings": {
             "form_code": "75908"
           }
         }
       },
       "block_order": [
-        "shopiform_form_section_eUMWe7"
+        "shopiform_form_section_KCPMHx"
       ],
       "settings": {
         "include_margins": true
@@ -225,7 +225,7 @@
     }
   },
   "order": [
-    "1761420777abe1fa64",
+    "1761421043e3d1ca0a",
     "image_banner",
     "17604693705d8ac65b",
     "176046831435fb4989",
