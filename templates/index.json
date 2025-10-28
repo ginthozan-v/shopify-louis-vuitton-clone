@@ -23,7 +23,7 @@
         "shopiform_form_section_3XEBRN"
       ],
       "custom_css": [
-        ".form-button {background: gold; color: black; border-radius: 25px;}"
+        ".form-button {background: gold; color: red; border-radius: 55px;}"
       ],
       "settings": {
         "include_margins": true
